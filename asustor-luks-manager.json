@@ -1,0 +1,21 @@
+{
+  "name": "Asustor LUKS Manager",
+  "script_path": "/volumeX/yourpath/.asustor_luks_manager/asustor-luks-manager.sh",
+  "description": "Mount/dismount encrypted LUKS containers",
+  "output_format": "terminal",
+  "parameters": [
+    {
+      "name": "Action",
+      "type": "list",
+      "required": true,
+      "values": ["mount", "dismount"]
+    },
+    {
+      "name": "Passphrase (for mount)",
+      "type": "text",
+      "secure": true,
+      "required": false,
+      "pass_as": "argument"
+    }
+  ]
+}
