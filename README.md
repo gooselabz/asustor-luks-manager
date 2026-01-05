@@ -8,7 +8,7 @@ Example use case: your NAS reboots and you'd like to securely re-mount your LUKS
 
 ## Why?
 
-Asustor lacks general encrypted container tools. This script enables best-in-class encrypted container mount/dismount, with human password required (no keys on device). Useful for application runtimes, secure backend storage, etc.
+Asustor lacks general encrypted container tools. This script enables best-in-class encrypted container mount/dismount, with human password required (no keys on device). Useful for application runtimes, secure backend storage, etc. It also has a key advantage over full disk encryption: ability to mount and manage the container remotely without KVM hardware.
 
 **For Docker using this approach**, see the companion [asustor-luks-docker](https://github.com/gooselabz/asustor-luks-docker).
 
